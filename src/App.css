@@ -45,7 +45,7 @@ body {
   align-items: center;
   font-size: 1.5rem;
   width: 100%;
-  color: white;
+  color: rgb(224, 224, 224);
   height: 80px;
   background-color: #193629;
   z-index: 100;
@@ -75,11 +75,13 @@ body {
 .home:hover {
   font-size: 1.8rem;
   transition: font-size 0.3s ease-in-out;
+  color: white;
 }
 
 .plants:hover {
   font-size: 1.8rem;
   transition: font-size 0.3s ease-in-out;
+  color: white;
 }
 
 p {
@@ -117,6 +119,7 @@ li a {
   font-size: 5rem;
   font-weight: 200;
   line-height: 1.1;
+  margin-bottom: 2rem;
   color: rgb(224, 224, 224);
 }
 
@@ -126,7 +129,8 @@ li a {
   text-decoration: none;
   color: rgb(246, 246, 246);
   padding: 15px 40px;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.8rem;
   height: 3rem;
   width: 12rem;
@@ -169,7 +173,7 @@ img {
   align-items: center;
   padding: 20px;
   margin: 20px;
-  background-color: rgb(234, 234, 234);
+  background-color: rgba(234, 234, 234, 0.85);
   color: black;
 }
 
@@ -186,7 +190,6 @@ img {
 .price-quantity {
   display: flex;
   height: 50%;
-
   flex-direction: column;
   justify-content: space-around;
 }
@@ -202,12 +205,13 @@ img {
   background: transparent;
   border: none;
   width: 100%;
-  color: white;
+  color: rgb(224, 224, 224);
   transition: scale 0.3s ease-in-out;
 }
 
 .cart-icon button:hover {
   scale: 110%;
+  color: white;
   transition: scale 0.3s ease-in-out;
 }
 .cart-count {
@@ -265,7 +269,7 @@ img {
   left: 0;
   width: inherit;
   height: inherit;
-  background-color: #2d5a46; /* Slightly lighter green for the animation */
+  background-color: #2d5a46;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -274,9 +278,8 @@ img {
 
 .item-box button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #2d5a46;
+  background-color: lightgreen;
   border: 1px solid black;
-  color: rgb(246, 246, 246);
 }
 
 .item-box button span {
@@ -306,6 +309,30 @@ img {
   height: 100%;
 }
 
+.splash-box {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  justify-self: center;
+  margin-bottom: 3rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.splash-description-paragraph {
+  color: rgb(224, 224, 224);
+  line-height: 1.8rem;
+  margin-bottom: 0;
+}
+
 .category-page {
   display: flex;
   width: 50%;
@@ -327,7 +354,7 @@ img {
 .our-plants {
   margin: 4rem;
   text-align: center;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,7 +370,7 @@ img {
 .our-plants p {
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .page-description {
@@ -399,12 +426,9 @@ img {
 
 .checkout-page {
   min-height: 100vh;
-  height: fit-content;
-
   z-index: 1;
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   align-items: center;
 }
@@ -425,7 +449,7 @@ img {
   padding-right: 8rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  color: rgb(246, 246, 246);
+  color: rgba(234, 234, 234);
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px;
   justify-self: center;
@@ -437,7 +461,7 @@ img {
 
 .item-checkout {
   box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.2);
-  border: 1px solid white;
+
   border-radius: 10px;
   padding: 1rem;
   width: 50%;
@@ -445,7 +469,9 @@ img {
   flex-direction: column;
   justify-self: center;
   align-items: center;
-  background-color: rgb(41, 48, 43);
+  color: black;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+  background-color: rgba(234, 234, 234, 0.85);
   margin: 2rem;
 }
 
@@ -454,7 +480,7 @@ img {
   transition: all 0.3s ease;
 }
 .item-checkout hover {
-  background-color: #2d5a46;
+  background-color: lightgreen;
   transition: all 0.3s ease;
 }
 
@@ -488,19 +514,34 @@ img {
 
 .card-item-top {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
+.card-item-top h3 {
+  flex-grow: 1; /* Makes the title take up remaining space */
+  text-align: center; /* Centers the text */
+  margin: 0;
+}
+
+.x-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.x-button:hover {
+  color: lightgreen;
+}
 .empty-cart-button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background-color: #2d5a46;
   border: 1px solid black;
   color: rgb(246, 246, 246);
-}
-.x-button {
-  margin-left: 6rem;
-  right: 20px;
 }
 
 .submit {
@@ -512,15 +553,14 @@ img {
   border: none;
   border: 1px solid rgb(119, 119, 119);
   margin: 10px 5px 10px 5px;
-  border: 1px solid white;
+  border: 1px solid rgb(234, 234, 234);
   transition: all 0.3s ease;
 }
 
 .submit:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #2d5a46;
+  background-color: lightgreen;
   border: 1px solid black;
-  color: rgb(246, 246, 246);
 }
 
 .checkout-page-items h2 {
@@ -530,4 +570,12 @@ img {
 
 .checkout-page-items p {
   margin: 1rem;
+}
+
+.cart-more-less {
+  border-radius: 5px;
+}
+
+.cart-more-less button:hover {
+  background-color: lightgreen;
 }
