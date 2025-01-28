@@ -1,0 +1,86 @@
+{
+  "houseplants": [
+    {
+      "category": "Low Light",
+      "description": "Low-light conditions refer to areas with minimal natural light, such as spaces away from windows or rooms that receive only indirect or filtered sunlight. These environments are suitable for houseplants that are adapted to thrive in the understory of forests, where light is scarce. Examples include pothos, snake plants, and ZZ plants, which can tolerate low light levels and still maintain their lush appearance. While low light doesn't mean no light, these plants perform best when placed in dimly lit corners or areas illuminated by artificial light sources.",
+      "plants": [
+        {
+          "id": "b5869515-7405-4730-ae59-9b1814e6033d",
+
+          "webp": "/products/snake_plant.webp",
+          "gif": "/gif/snake_plant.gif",
+          "embed": "https://sketchfab.com/models/3f3af91c194749a6a252c766ef49e851/embed?&transparent=1&controls=0&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
+          "plant_name": "Snake Plant",
+          "price": "$15.99",
+          "quantity": 0
+        },
+        {
+          "id": "5030b3b9-ca82-4b81-b601-245af8771952",
+          "webp": "/products/zz_plant.webp",
+          "gif": "/gif/zz_plant.gif",
+          "embed": "https://sketchfab.com/models/722db313af5e46808e5d3f155c5bfe40/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
+          "plant_name": "ZZ Plant",
+          "price": "$18.50"
+        },
+        {
+          "id": "e1b7e913-c64a-456c-b112-0b02419a243e",
+          "webp": "/products/peace_lily.webp",
+          "embed": "https://sketchfab.com/models/9036c0e1761b471aa4e8035d8e972308/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
+          "plant_name": "Peace Lily",
+          "price": "$22.00",
+          "quantity": 0
+        }
+      ]
+    },
+    {
+      "category": "Medium Light",
+      "description": "Medium-light conditions are areas that receive indirect but consistent natural light, such as spaces near east- or north-facing windows or rooms with filtered sunlight. Plants that thrive in these conditions require more light than low-light species but cannot tolerate direct sun exposure, which may scorch their leaves. Examples of medium-light houseplants include peace lilies, philodendrons, and spider plants. These plants flourish when placed in bright but not overly sunny spots, making them versatile for various indoor settings.",
+      "plants": [
+        {
+          "id": "34880026-2eee-4200-ada1-8d719edbad13",
+          "webp": "/products/rubber_plant.webp",
+          "embed": "https://sketchfab.com/models/fc83523315714f8d96534bfaa4e15af1/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
+          "plant_name": "Rubber Plant",
+          "price": "$20.00",
+          "quantity": 0
+        },
+        {
+          "id": "d087371c-a072-474c-9103-4d387ba5e686",
+          "webp": "/products/spider_plant.webp",
+          "embed": "https://sketchfab.com/models/84ddce097c5944ef94980d391abe6269/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
+          "plant_name": "Spider Plant",
+          "price": "$12.99",
+          "quantity": 0
+        }
+      ]
+    },
+    {
+      "category": "High Light",
+      "description": "High-light conditions refer to spaces with abundant, direct sunlight for several hours a day, typically near south- or west-facing windows. These areas are ideal for houseplants that naturally grow in sunny, open environments, such as succulents, cacti, and fiddle-leaf figs. High-light plants require strong, consistent sunlight to thrive and maintain healthy growth. Placing these plants in locations with ample light ensures vibrant foliage and robust development, but they should be monitored for signs of sunburn or overexposure.",
+      "plants": [
+        {
+          "id": "e435983d-82dc-48a7-9510-d225c1a727fd",
+          "webp": "/products/fiddle_leaf_fig.webp",
+          "gif": "/gif/fiddle_leaf_fig.gif",
+          "embed": "https://sketchfab.com/models/eddd3a95eb584157b32cd33ae5e9f6ee/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
+          "plant_name": "Fiddle Leaf Fig",
+          "price": "$45.00"
+        },
+        {
+          "id": "c5501e7a-8574-40b3-93d3-2939ee726289",
+          "webp": "/products/areca_palm.webp",
+          "embed": "https://sketchfab.com/models/03e136d0616b412d9f393fc4b549d876/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
+          "plant_name": "Areca Palm",
+          "price": "$35.50"
+        },
+        {
+          "id": "9d3d629c-58e8-4aef-ba78-89d6bc5c0622",
+          "webp": "/products/aloe_vera.webp",
+          "embed": "https://sketchfab.com/models/644914f16970484ab07544609925d09f/embed?&transparent=1",
+          "plant_name": "Aloe Vera",
+          "price": "$10.00"
+        }
+      ]
+    }
+  ]
+}
