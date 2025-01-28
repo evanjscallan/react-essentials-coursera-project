@@ -41,11 +41,13 @@ const ShoppingCartPage: React.FC<ShoppingCartItemsProps> = ({
               </div>
             ))
           ) : (
-            <div>
+            <div className="empty-cart">
               {" "}
               Empty Cart.{" "}
               <Link to="/plants">
-                <p className="link">Browse our plants.</p>
+                <button className="link empty-cart-button">
+                  Continue Shopping
+                </button>
               </Link>{" "}
             </div>
           )}
@@ -55,9 +57,13 @@ const ShoppingCartPage: React.FC<ShoppingCartItemsProps> = ({
             ""
           )}
         </div>
-        <button onClick={handleClick} className="submit">
-          Submit
-        </button>
+        {userCart.length > 0 ? (
+          <button onClick={handleClick} className="submit">
+            Submit
+          </button>
+        ) : (
+          <p></p>
+        )}
       </div>
     </div>
   );

@@ -451,6 +451,41 @@ img {
   transition: all 0.3s ease;
 }
 
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-cart-button {
+  border-radius: 10px;
+  text-decoration: none;
+  text-decoration-line: none;
+  background-color: rgb(246, 246, 246);
+  color: black;
+  border: none;
+  border: 1px solid rgb(119, 119, 119);
+  margin: 10px 5px 10px 5px;
+  padding: 1.5rem;
+  height: 30px;
+  border: none;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.empty-cart-button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #2d5a46;
+  border: 1px solid black;
+  color: rgb(246, 246, 246);
+}
+
 .submit {
   border-radius: 20px;
   height: 2rem;

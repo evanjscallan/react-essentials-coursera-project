@@ -9,12 +9,7 @@ interface PlantDataProps {
   removeFromCart: (plantId: string) => void;
 }
 
-const ProductListingPage: React.FC<PlantDataProps> = ({
-  allPlantProducts,
-  getQuantity,
-  addToCart,
-  removeFromCart,
-}) => {
+const ProductListingPage: React.FC<PlantDataProps> = ({ allPlantProducts }) => {
   return (
     <div className="products-outer">
       <div className="shopping-bg">
@@ -29,12 +24,7 @@ const ProductListingPage: React.FC<PlantDataProps> = ({
         </div>
         {allPlantProducts.houseplants.map((categoryItem, index) => (
           <div className="transparent-bg" key={index}>
-            <ProductCategory
-              addToCart={addToCart}
-              removeFromCart={removeFromCart}
-              getQuantity={getQuantity}
-              categorySection={categoryItem}
-            />
+            <ProductCategory categorySection={categoryItem} />
           </div>
         ))}
       </div>
