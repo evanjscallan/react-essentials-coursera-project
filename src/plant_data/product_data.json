@@ -6,9 +6,7 @@
       "plants": [
         {
           "id": "b5869515-7405-4730-ae59-9b1814e6033d",
-
-          "webp": "/products/snake_plant.webp",
-          "gif": "/gif/snake_plant.gif",
+          "webp": "./products/snake_plant.webp",
           "embed": "https://sketchfab.com/models/3f3af91c194749a6a252c766ef49e851/embed?&transparent=1&controls=0&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
           "plant_name": "Snake Plant",
           "price": "$15.99",
@@ -16,15 +14,14 @@
         },
         {
           "id": "5030b3b9-ca82-4b81-b601-245af8771952",
-          "webp": "/products/zz_plant.webp",
-          "gif": "/gif/zz_plant.gif",
+          "webp": "./products/zz_plant.webp",
           "embed": "https://sketchfab.com/models/722db313af5e46808e5d3f155c5bfe40/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
           "plant_name": "ZZ Plant",
           "price": "$18.50"
         },
         {
           "id": "e1b7e913-c64a-456c-b112-0b02419a243e",
-          "webp": "/products/peace_lily.webp",
+          "webp": "./products/peace_lily.webp",
           "embed": "https://sketchfab.com/models/9036c0e1761b471aa4e8035d8e972308/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
           "plant_name": "Peace Lily",
           "price": "$22.00",
@@ -38,7 +35,7 @@
       "plants": [
         {
           "id": "34880026-2eee-4200-ada1-8d719edbad13",
-          "webp": "/products/rubber_plant.webp",
+          "webp": "./products/rubber_plant.webp",
           "embed": "https://sketchfab.com/models/fc83523315714f8d96534bfaa4e15af1/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
           "plant_name": "Rubber Plant",
           "price": "$20.00",
@@ -46,7 +43,7 @@
         },
         {
           "id": "d087371c-a072-474c-9103-4d387ba5e686",
-          "webp": "/products/spider_plant.webp",
+          "webp": "./products/spider_plant.webp",
           "embed": "https://sketchfab.com/models/84ddce097c5944ef94980d391abe6269/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
           "plant_name": "Spider Plant",
           "price": "$12.99",
@@ -60,7 +57,7 @@
       "plants": [
         {
           "id": "e435983d-82dc-48a7-9510-d225c1a727fd",
-          "webp": "/products/fiddle_leaf_fig.webp",
+          "webp": "./products/fiddle_leaf_fig.webp",
           "gif": "/gif/fiddle_leaf_fig.gif",
           "embed": "https://sketchfab.com/models/eddd3a95eb584157b32cd33ae5e9f6ee/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
           "plant_name": "Fiddle Leaf Fig",
@@ -68,14 +65,14 @@
         },
         {
           "id": "c5501e7a-8574-40b3-93d3-2939ee726289",
-          "webp": "/products/areca_palm.webp",
+          "webp": "./products/areca_palm.webp",
           "embed": "https://sketchfab.com/models/03e136d0616b412d9f393fc4b549d876/embed?&transparent=1&preload=1&ui_watermark_link=0&ui_watermark=0&ui_stop=0&ui_controls=0&frameborder=0&ui_infos=0&ui_inspector=0",
           "plant_name": "Areca Palm",
           "price": "$35.50"
         },
         {
           "id": "9d3d629c-58e8-4aef-ba78-89d6bc5c0622",
-          "webp": "/products/aloe_vera.webp",
+          "webp": "./products/aloe_vera.webp",
           "embed": "https://sketchfab.com/models/644914f16970484ab07544609925d09f/embed?&transparent=1",
           "plant_name": "Aloe Vera",
           "price": "$10.00"
