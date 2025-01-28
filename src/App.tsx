@@ -1,13 +1,14 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import data from "./plant_data/product_data.json";
 import "./App.css";
 import HomePage from "./components/HomePage";
 import ShoppingCartPage from "./components/ShoppingCartPage";
 import ProductListingPage from "./components/ProductListingPage";
 import Navbar from "./components/Navbar";
+
 import { HouseplantData } from "./types/types";
-import { CartItem, Category as CategoryType, Plant } from "./types/types";
-import { useState, useEffect, createContext } from "react";
+import { CartItem, Plant } from "./types/types";
+import { useState, useEffect } from "react";
 
 // Normalize JSON data to convert price to number
 const normalizeData = (data: any): HouseplantData => {
@@ -51,14 +52,6 @@ function App() {
   const getQuantity = (plantId: string): number => {
     const item = cart.find((cartItem) => cartItem.id === plantId);
     return item ? item.quantity : 0;
-  };
-
-  const getTotalQuantity = (plantId: string): any => {
-    const totalArr = [];
-
-    const item2 = cart.find((cartItem) => cartItem.id === plantId);
-    totalArr.push(item2);
-    console.log(`Amount of items: ${totalArr.length}`);
   };
 
   const addToCart = (plant: Plant) => {
