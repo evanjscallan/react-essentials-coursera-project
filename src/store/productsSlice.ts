@@ -29,7 +29,7 @@ const normalizeData = (data: any): HouseplantData => {
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
-    const response = await fetch("/src/plant_data/product_data.json");
+    const response = await fetch("./plant_data/product_data.json");
     if (!response.ok) {
       throw new Error("Failed to fetch products");
     }
