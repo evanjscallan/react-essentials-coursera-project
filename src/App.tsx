@@ -1,40 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import data from "./plant_data/product_data.json";
 import "./App.css";
 import HomePage from "./components/HomePage";
 import ShoppingCartPage from "./components/ShoppingCartPage";
 import ProductListingPage from "./components/ProductListingPage";
 import Navbar from "./components/Navbar";
-
-import { HouseplantData } from "./types/types";
 import { addToCart, removeFromCart } from "./store/cartSlice";
 
-import { CartItem, Plant } from "./types/types";
-import { useState, useEffect } from "react";
+import { Plant } from "./types/types";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  AppDispatch,
-  RootState,
-  useAppDispatch,
-  useAppSelector,
-} from "./store/store";
+import { AppDispatch, RootState } from "./store/store";
 import { fetchProducts } from "./store/productsSlice";
-
-// Normalize JSON data to convert price to number
-const normalizeData = (data: any): HouseplantData => {
-  return {
-    houseplants: data.houseplants.map((category: any) => ({
-      ...category,
-      plants: category.plants.map((plant: any) => ({
-        ...plant,
-        price: parseFloat(plant.price.replace("$", "")), // Convert price to number
-      })),
-    })),
-  };
-};
-
-const plantData: HouseplantData = normalizeData(data);
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
